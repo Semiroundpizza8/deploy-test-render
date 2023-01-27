@@ -1,5 +1,7 @@
 import db from "./db";
 import User from "./User";
+import dotenv from "dotenv";
+dotenv.config();
 
 const seed = async () => {
   await db.sync({ force: true });
